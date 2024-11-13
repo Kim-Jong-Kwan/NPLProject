@@ -8,8 +8,8 @@ from tqdm import tqdm  # 프로그래스를 표시하는 라이브러리
 from tensorflow.keras.preprocessing.text import Tokenizer
 import numpy as np
 # separate title [ 1.리뷰파일 다운로드 ] ====================
-# urllib.request.urlretrieve("https://raw.githubusercontent.com/e9t/nsmc/master/ratings_train.txt", filename="ratings_train.txt")
-# urllib.request.urlretrieve("https://raw.githubusercontent.com/e9t/nsmc/master/ratings_test.txt", filename="ratings_test.txt")
+urllib.request.urlretrieve("https://raw.githubusercontent.com/e9t/nsmc/master/ratings_train.txt", filename="ratings_train.txt")
+urllib.request.urlretrieve("https://raw.githubusercontent.com/e9t/nsmc/master/ratings_test.txt", filename="ratings_test.txt")
 
 # separate title [ 2.판다스로 데이터 확인 ] ====================
 train_data = pd.read_table('ratings_train.txt')
